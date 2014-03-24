@@ -3,7 +3,7 @@ type secril-daemon, domain;
 type secril-daemon_exec, exec_type, file_type;
 
 # Start /system/bin/sec-ril from init
-init_daemon_domain(secril-daemon)
+#init_daemon_domain(secril-daemon)
 
 allow secril-daemon secril-daemon_exec:file { open execute_no_trans getattr };
 allow secril-daemon self:udp_socket { create ioctl };

@@ -33,13 +33,12 @@ COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 ifeq ($(TARGET_VOICE_TECH), cdma)
 TARGET_KERNEL_CONFIG := cyanogenmod_t0ltecdma_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
-TARGET_GCC_VERSION_ARM := sm-arm-eabi-4.7
 else
 TARGET_KERNEL_CONFIG := cyanogenmod_t0lte_defconfig
+endif
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
 TARGET_GCC_VERSION_ARM := sm-arm-eabi-4.7
-endif
+
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/t0lte/rootdir/fstab.smdk4x12
@@ -49,10 +48,10 @@ RECOVERY_FSTAB_VERSION := 2
 TARGET_OTA_ASSERT_DEVICE := t0lte,t0ltexx,GT-N7105,t0ltedv,GT-N7105T,t0lteatt,SGH-I317,t0ltetmo,SGH-T889,t0ltecan,t0ltevl,SGH-I317M
 
 # Selinux
-BOARD_SEPOLICY_DIRS += \
+BOARD_SEPOLICY_DIRS := \
     device/samsung/t0lte/selinux
 
-BOARD_SEPOLICY_UNION += \
+BOARD_SEPOLICY_UNION := \
     file_contexts \
     te_macros \
     device.te \
@@ -69,3 +68,4 @@ BOARD_SEPOLICY_UNION += \
     system.te \
     ueventd.te \
     wpa_supplicant.te
+

@@ -1,15 +1,15 @@
-# Release name
-PRODUCT_RELEASE_NAME := t0lte
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common Liquid stuff.
-$(call inherit-product, vendor/liquid/config/common_phone.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
+
+# Inherit some common slim stuff.
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
+
+# Release name
+PRODUCT_RELEASE_NAME := t0lte
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0lte
