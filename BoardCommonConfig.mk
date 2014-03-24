@@ -33,8 +33,12 @@ COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 ifeq ($(TARGET_VOICE_TECH), cdma)
 TARGET_KERNEL_CONFIG := cyanogenmod_t0ltecdma_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
+TARGET_GCC_VERSION_ARM := sm-arm-eabi-4.7
 else
 TARGET_KERNEL_CONFIG := cyanogenmod_t0lte_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
+TARGET_GCC_VERSION_ARM := sm-arm-eabi-4.7
 endif
 
 # Recovery
