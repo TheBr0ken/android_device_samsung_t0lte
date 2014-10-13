@@ -70,6 +70,9 @@ PRODUCT_PACKAGES += \
     Stk \
     SamsungServiceMode
 
+# Enhanced NFC
+$(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SamsungQualcommRIL \
