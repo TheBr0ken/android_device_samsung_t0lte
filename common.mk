@@ -36,11 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.smdk4x12
-
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.smdk4x12
+    camera.exynos4
 
 # NFC
 PRODUCT_PACKAGES += \

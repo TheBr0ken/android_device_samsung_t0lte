@@ -38,6 +38,9 @@ else
 TARGET_KERNEL_CONFIG := liquid_t0lte_defconfig
 endif
 
+# Camera Hal Support
+TARGET_PROVIDES_CAMERA_HAL := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/t0lte/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
