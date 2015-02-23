@@ -1,0 +1,32 @@
+[
+    {
+        "remote": "lsd",
+        "repository": "android_device_samsung_smdk4412-common",
+        "target_path": "device/samsung/smdk4412-common",
+        "revision": "lollipop"
+    },
+    {
+        "remote": "lsd",
+        "repository": "android_kernel_samsung_smdk4412",
+        "target_path": "kernel/samsung/smdk4412",
+        "revision": "lollipop"
+    },
+    {
+        "remote": "gh",
+        "repository": "CyanogenMod/android_device_samsung_smdk4412-qcom-common",
+        "target_path": "device/samsung/smdk4412-qcom-common",
+        "revision": "cm-12.0"
+    },
+    {
+        "remote": "gh",
+        "repository": "Cyanogenmod/android_hardware_samsung",
+        "target_path": "hardware/samsung",
+        "revision": "cm-12.0"
+    },
+    {
+        "remote": "gh",
+        "repository": "TheMuppets/proprietary_vendor_samsung",
+        "target_path": "vendor/samsung",
+        "revision": "cm-12.0"
+    }
+]
